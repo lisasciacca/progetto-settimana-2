@@ -226,24 +226,24 @@ function renderProdotti(prodotti) {
       let prod = prodotti[i];
       if (prod.disponibile) {
          y += `
-                <div class="boxC">
+                <div class="boxCS">
                     <div class="boxImg">${prod.nome}</div>
                     <div class="boxInfo">
                         <h3>${prod.nome}</h3>
-                        <div class="rating">Rating: ${prod.rating}</div>
-                        <div class="prezzo">${prod.prezzo.toFixed(2)} €</div>
-                        <button type=button>Aggiungi al carrello</button>
+                        <div class="rating">${stelline(prodotti[4].rating)} <span class= "numerino">(${prod.rating})</span></div>
+                        <div class="prezzo">${formattaPrezzo(prodotti[i].prezzo)}</div>
+                        <button type=button class="aggiungi">Aggiungi al carrello</button>
                     </div>
                 </div>
             `;
       } else {
          y += `
-                <div class="boxC noDisponibile">
+                <div class="boxCS noDisponibile">
                     <div class="boxImg">${prod.nome}</div>
                     <div class="boxInfo">
                         <h3>${prod.nome}</h3>
-                        <div class="rating">Rating: ${prod.rating}</div>
-                        <div class="prezzo">${prod.prezzo.toFixed(2)} €</div>
+                        <div class="rating">${stelline(prodotti[4].rating)} <span class= "numerino">(${prod.rating})</span></div>
+                        <div class="prezzo">${formattaPrezzo(prodotti[i].prezzo)}</div>
                         <button type=button disabled>Esaurito</button>
                     </div>
                 </div>
