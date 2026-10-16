@@ -18,59 +18,114 @@ REGOLE
 
 const prodotti = [
 
-  {
-    nome: "Tablet",
-    categoria: "Elettronica",
-    prezzo: 199.00,
-    rating: 4.7,
-    immagine: " ",
-    disponibile: true
-  },
+   {
+      nome: "Tablet",
+      categoria: "Elettronica",
+      prezzo: 199.00,
+      rating: 4.7,
+      immagine: " ",
+      disponibile: true
+   },
 
-  {
-    nome: "Libro",
-    categoria: "Libri",
-    prezzo: 14.90,
-    rating: 4.0,
-    immagine: " ",
-    disponibile: true
-  },
+   {
+      nome: "Libro",
+      categoria: "Libri",
+      prezzo: 14.90,
+      rating: 4.0,
+      immagine: " ",
+      disponibile: true
+   },
 
-  {
-    nome: "Zaino",
-    categoria: "Abbigliamento",
-    prezzo: 49.99,
-    rating: 4.3,
-    immagine: " ",
-    disponibile: true
-  },
+   {
+      nome: "Zaino",
+      categoria: "Abbigliamento",
+      prezzo: 49.99,
+      rating: 4.3,
+      immagine: " ",
+      disponibile: true
+   },
 
-  {
-    nome: "Smartwatch",
-    categoria: "Elettronica",
-    prezzo: 119.00,
-    rating: 4.4,
-    immagine: " ",
-    disponibile: true
-  },
+   {
+      nome: "Smartwatch",
+      categoria: "Elettronica",
+      prezzo: 119.00,
+      rating: 4.4,
+      immagine: " ",
+      disponibile: true
+   },
 
-  {
-    nome: "Mouse",
-    categoria: "Elettronica",
-    prezzo: 24.90,
-    rating: 4.1,
-    immagine: " ",
-    disponibile: true
-  },
+   {
+      nome: "Mouse",
+      categoria: "Elettronica",
+      prezzo: 24.90,
+      rating: 4.1,
+      immagine: " ",
+      disponibile: true
+   },
 
-  {
-    nome: "Caffettiera",
-    categoria: "Casa",
-    prezzo: 22.00,
-    rating: 4.6,
-    immagine: " ",
-    disponibile: true
-  }
+   {
+      nome: "Caffettiera",
+      categoria: "Casa",
+      prezzo: 22.00,
+      rating: 4.6,
+      immagine: " ",
+      disponibile: true
+   }
+
+   {
+      nome: "Fotocamera",
+      categoria: "Elettronica",
+      prezzo: 179.00,
+      rating: 3.7,
+      immagine: " ",
+      disponibile: true
+   },
+
+   {
+      nome: "Libro classico",
+      categoria: "Libri",
+      prezzo: 18.90,
+      rating: 2.0,
+      immagine: " ",
+      disponibile: false
+   },
+
+   {
+      nome: "Maglietta",
+      categoria: "Abbigliamento",
+      prezzo: 18.99,
+      rating: 1.3,
+      immagine: " ",
+      disponibile: true
+   },
+
+   {
+      nome: "Vaso",
+      categoria: "casa",
+      prezzo: 443.00,
+      rating: 5,
+      immagine: " ",
+      disponibile: false
+   },
+
+   {
+      nome: "Teiera",
+      categoria: "casa",
+      prezzo: 4.90,
+      rating: 3.1,
+      immagine: " ",
+      disponibile: true
+   },
+
+   {
+      nome: "Giacca",
+      categoria: "abbigliameto",
+      prezzo: 75.00,
+      rating: 4.8,
+      immagine: " ",
+      disponibile: true
+   }
+
 ];
 
 console.log(prodotti);
@@ -84,7 +139,7 @@ console.log(prodotti);
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 function formattaPrezzo(prezzo) {
-    return "€ " + prezzo.toFixed(2).replace('.', ',');
+   return "€ " + prezzo.toFixed(2).replace('.', ',');
 }
 
 console.log(formattaPrezzo(150));
@@ -100,20 +155,20 @@ console.log(formattaPrezzo(prodotti[5].prezzo));
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 function stelline(rating) {
-    switch (true) {
-        case rating < 1:
-            return "☆☆☆☆☆";
-        case rating >= 1 && rating < 2:
-            return "★☆☆☆☆";
-        case rating >= 2 && rating < 3:
-            return "★★☆☆☆";
-        case rating >= 3 && rating < 4:
-            return "★★★☆☆";
-        case rating >= 4 && rating < 5:
-            return "★★★★☆";
-        default:
-            return "★★★★★";
-    }
+   switch (true) {
+      case rating < 1:
+         return "☆☆☆☆☆";
+      case rating >= 1 && rating < 2:
+         return "★☆☆☆☆";
+      case rating >= 2 && rating < 3:
+         return "★★☆☆☆";
+      case rating >= 3 && rating < 4:
+         return "★★★☆☆";
+      case rating >= 4 && rating < 5:
+         return "★★★★☆";
+      default:
+         return "★★★★★";
+   }
 }
 
 console.log(stelline(3));
@@ -126,13 +181,13 @@ console.log(stelline(prodotti[4].rating))
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 function filtro(categoria) {
-    let x = [];
-    for (let i in prodotti) {
-        if (prodotti[i].categoria === categoria) {
-            x.push(prodotti[i]);
-        }
-    }
-    return x;
+   let x = [];
+   for (let i in prodotti) {
+      if (prodotti[i].categoria === categoria) {
+         x.push(prodotti[i]);
+      }
+   }
+   return x;
 }
 
 console.log(filtro("Elettronica"));
@@ -144,13 +199,13 @@ console.log(filtro("Elettronica"));
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 function filtroDisponibilita() {
-    let x = [];
-    for (let i in prodotti) {
-        if (prodotti[i].disponibile && prodotti[i].rating >=3) {
-            x.push(prodotti[i]);
-        }
-    }
-    return x;
+   let x = [];
+   for (let i in prodotti) {
+      if (prodotti[i].disponibile && prodotti[i].rating >= 3) {
+         x.push(prodotti[i]);
+      }
+   }
+   return x;
 }
 
 console.log(filtroDisponibilita());
@@ -164,6 +219,10 @@ console.log(filtroDisponibilita());
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function grigliaProdotti(prodotti) {
+    const x = document.getElementById("grigliaProdotti");
+   
+}
 
 /* VERSIONE AVANZATA — Aggiungi al carrello
    Quando si clicca il bottone "Aggiungi al carrello", incrementa il contatore

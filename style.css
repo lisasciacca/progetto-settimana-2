@@ -41,6 +41,8 @@ header {
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
+  position: sticky;
+  top: 0;
 }
 
 .logo {
@@ -132,12 +134,10 @@ header {
 
 .hero h4 {
   font-size: 18px;
-  color: #white;
+  color: white;
 }
 
 /*Categorie*/
-
-
 
 .categorie {
   max-width: 1200px;
@@ -162,7 +162,7 @@ header {
   background: white;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
   margin-bottom: 20px;
   margin-top: 10px;
 }
@@ -173,7 +173,7 @@ header {
 
 /*serve a mantenersi in riga, se no va a capo*/
 
-.boxC:last-child { 
+.boxC:last-child {
   margin-right: 0;
 }
 
@@ -185,14 +185,6 @@ header {
   font-size: 24px;
   font-weight: bold;
 }
-
-/* Colori 
-STELLINE (sia piene che vuote): #FF9900
-AGGIUNGI AL CARRELLO: #FFD814
-HOVER AGGIUNGI AL CARRELLO: #F7CA00
-FOOTER: #232F3E 
-*/
-
 
 .elettronica {
   background-color: #232F3E;
@@ -230,4 +222,62 @@ FOOTER: #232F3E
 .boxInfo a:hover {
   text-decoration: underline;
   color: #c45500;
+}
+
+/* Colori 
+STELLINE (sia piene che vuote): #FF9900
+AGGIUNGI AL CARRELLO: #FFD814
+HOVER AGGIUNGI AL CARRELLO: #F7CA00
+Card dei prodotti: box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+*/
+
+/*Footer*/
+
+footer {
+  background-color: #232f3e;
+  color: white;
+  padding: 40px 2%;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.colonne {
+  width: 100%;
+  overflow: hidden;
+}
+
+.gruppo1,
+.gruppo2,
+.gruppo3 {
+  float: left;
+  width: 33.333%;
+  box-sizing: border-box;
+}
+
+footer h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer li {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #dddddd;
+  text-decoration: none;
+  font-size: 13px;
+  display: inline-block;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
