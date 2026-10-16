@@ -70,7 +70,7 @@ const prodotti = [
       rating: 4.6,
       immagine: " ",
       disponibile: true
-   }
+   },
 
    {
       nome: "Fotocamera",
@@ -219,10 +219,48 @@ console.log(filtroDisponibilita());
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-function grigliaProdotti(prodotti) {
-    const x = document.getElementById("grigliaProdotti");
-   
+function renderProdotti(prodotti) {
+   const container = document.querySelector("#grigliaProdotti");
+   let y = "";
+   for (let i = 0; i < prodotti.length; i++) {
+      let prod = prodotti[i];
+      if (prod.disponibile) {
+         y += `
+                <div class="boxC">
+                    <div class="boxImg">${prod.nome}</div>
+                    <div class="boxInfo">
+                        <h3>${prod.nome}</h3>
+                        <div class="rating">Rating: ${prod.rating}</div>
+                        <div class="prezzo">${prod.prezzo.toFixed(2)} €</div>
+                        <button type=button>Aggiungi al carrello</button>
+                    </div>
+                </div>
+            `;
+      } else {
+         y += `
+                <div class="boxC noDisponibile">
+                    <div class="boxImg">${prod.nome}</div>
+                    <div class="boxInfo">
+                        <h3>${prod.nome}</h3>
+                        <div class="rating">Rating: ${prod.rating}</div>
+                        <div class="prezzo">${prod.prezzo.toFixed(2)} €</div>
+                        <button type=button disabled>Esaurito</button>
+                    </div>
+                </div>
+            `;
+      }
+
+      
+   }
+
+   container.innerHTML = y;
 }
+
+window.onload = function() {
+    renderProdotti(prodotti);
+};
+
+
 
 /* VERSIONE AVANZATA — Aggiungi al carrello
    Quando si clicca il bottone "Aggiungi al carrello", incrementa il contatore
@@ -256,3 +294,5 @@ function grigliaProdotti(prodotti) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+

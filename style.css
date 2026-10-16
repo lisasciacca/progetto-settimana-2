@@ -224,12 +224,65 @@ header {
   color: #c45500;
 }
 
-/* Colori 
-STELLINE (sia piene che vuote): #FF9900
-AGGIUNGI AL CARRELLO: #FFD814
-HOVER AGGIUNGI AL CARRELLO: #F7CA00
-Card dei prodotti: box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
-*/
+/* Griglia creata da JS */
+
+.prodottiSez {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.prodottiSez h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #0f1111;
+}
+
+#grigliaProdotti {
+  overflow: hidden;
+}
+
+.boxInfo {
+  padding: 15px;
+}
+
+.boxInfo h3 {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.rating {
+  font-size: 13px;
+  color: #FF9900;
+  margin-bottom: 5px;
+}
+
+.prezzo {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.boxInfo button {
+  background-color: #FFD814;
+  border-radius: 20px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.boxInfo button:hover {
+  background-color: #f7ca00;
+}
+
+.noDisponibile button {
+  background-color: #FFD814;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
 
 /*Footer*/
 
