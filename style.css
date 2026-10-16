@@ -31,8 +31,6 @@ button {
 
 /* Scrivi qui sotto i tuoi stili */
 /* Colori
-HEADER: #131921
-PULSANTE CERCA: #FEBD69
 PULSANTE CARRELLO: #232F3E
 HERO SECTION: #303F51
 ELETTRONICA: #232F3E
@@ -45,3 +43,80 @@ AGGIUNGI AL CARRELLO: #FFD814
 HOVER AGGIUNGI AL CARRELLO: #F7CA00
 FOOTER: #232F3E 
 */
+
+header {
+    background-color: #131921;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.logo {
+    font-size: 29px;
+    font-weight: bold;
+    float: left;
+    color: #febd69;
+    cursor: pointer;
+    padding-right: 3px;
+    padding-left: 3px;
+    line-height: 30px;
+}
+
+.barra {
+    float: left;
+    width: 63%;
+    margin-left: 20px;
+    margin-right: 0px;
+    padding-right: 0px;
+    border: 0;
+    overflow: hidden;
+}
+
+.barra input {
+    float: left;
+    width: 82%;
+    padding: 11px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.barra button {
+    float: left;
+    width: 10%;
+    background-color: #febd69; 
+    border: none;
+    padding: 10px 0;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+
+.headerLinks {
+    float: left;
+    width: 260px;
+    text-align: left;
+    padding-top: 4px;
+    margin-right: 4px;
+}
+
+.headerLinks a {
+    color: white;
+    text-decoration: none;
+    margin-left: 0px;
+    font-size: 14px;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.cart {
+    background-color: #232F3E;
+    color: white;
+    border: 1px solid #888;
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-weight: bold;
+}

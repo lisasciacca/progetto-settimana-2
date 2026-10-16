@@ -125,11 +125,35 @@ console.log(stelline(prodotti[4].rating))
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function filtro(categoria) {
+    let x = [];
+    for (let i in prodotti) {
+        if (prodotti[i].categoria === categoria) {
+            x.push(prodotti[i]);
+        }
+    }
+    return x;
+}
+
+console.log(filtro("Elettronica"));
+
 /* VERSIONE INTERMEDIA — Filtro disponibilità e rating
    Funzione che genera un array filtrato dall'array prodotti, mostrando soltanto i prodotti disponibili con rating >= 3
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+function filtroDisponibilita() {
+    let x = [];
+    for (let i in prodotti) {
+        if (prodotti[i].disponibile && prodotti[i].rating >=3) {
+            x.push(prodotti[i]);
+        }
+    }
+    return x;
+}
+
+console.log(filtroDisponibilita());
 
 /* --------------------------------------------------------------
 
