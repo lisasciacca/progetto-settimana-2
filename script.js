@@ -99,6 +99,26 @@ console.log(formattaPrezzo(prodotti[5].prezzo));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function stelline(rating) {
+    switch (true) {
+        case rating < 1:
+            return "☆☆☆☆☆";
+        case rating >= 1 && rating < 2:
+            return "★☆☆☆☆";
+        case rating >= 2 && rating < 3:
+            return "★★☆☆☆";
+        case rating >= 3 && rating < 4:
+            return "★★★☆☆";
+        case rating >= 4 && rating < 5:
+            return "★★★★☆";
+        default:
+            return "★★★★★";
+    }
+}
+
+console.log(stelline(3));
+console.log(stelline(prodotti[4].rating))
+
 /* VERSIONE INTERMEDIA — Filtro per categoria
    Funzione che riceve il parametro categoria e filtra l'array prodotti mostrando solo i prodotti della categoria ricevuta
 */
