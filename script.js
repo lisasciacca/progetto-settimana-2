@@ -16,6 +16,65 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const prodotti = [
+
+  {
+    nome: "Tablet",
+    categoria: "Elettronica",
+    prezzo: 199.00,
+    rating: 4.7,
+    immagine: " ",
+    disponibile: true
+  },
+
+  {
+    nome: "Libro",
+    categoria: "Libri",
+    prezzo: 14.90,
+    rating: 4.0,
+    immagine: " ",
+    disponibile: true
+  },
+
+  {
+    nome: "Zaino",
+    categoria: "Abbigliamento",
+    prezzo: 49.99,
+    rating: 4.3,
+    immagine: " ",
+    disponibile: true
+  },
+
+  {
+    nome: "Smartwatch",
+    categoria: "Elettronica",
+    prezzo: 119.00,
+    rating: 4.4,
+    immagine: " ",
+    disponibile: true
+  },
+
+  {
+    nome: "Mouse",
+    categoria: "Elettronica",
+    prezzo: 24.90,
+    rating: 4.1,
+    immagine: " ",
+    disponibile: true
+  },
+
+  {
+    nome: "Caffettiera",
+    categoria: "Casa",
+    prezzo: 22.00,
+    rating: 4.6,
+    immagine: " ",
+    disponibile: true
+  }
+];
+
+console.log(prodotti);
+
 
 /* VERSIONE INTERMEDIA — formattaPrezzo(prezzo)
    Funzione che ritorna una stringa tipo "€ 19,99".
@@ -23,6 +82,13 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+function formattaPrezzo(prezzo) {
+    return "€ " + prezzo.toFixed(2).replace('.', ',');
+}
+
+console.log(formattaPrezzo(150));
+console.log(formattaPrezzo(prodotti[5].prezzo));
 
 
 /* VERSIONE INTERMEDIA — stelline(rating)
