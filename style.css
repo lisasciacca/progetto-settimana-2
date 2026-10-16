@@ -30,19 +30,9 @@ button {
 }
 
 /* Scrivi qui sotto i tuoi stili */
-/* Colori
-PULSANTE CARRELLO: #232F3E
-HERO SECTION: #303F51
-ELETTRONICA: #232F3E
-LIBRI: #C45500
-ABBIGLIAMENTO: #146EB4
-CASA: #067D62
-SCRITTE NELLE CARD: #EEEEEE
-STELLINE (sia piene che vuote): #FF9900
-AGGIUNGI AL CARRELLO: #FFD814
-HOVER AGGIUNGI AL CARRELLO: #F7CA00
-FOOTER: #232F3E 
-*/
+
+
+/*Header*/
 
 header {
     background-color: #131921;
@@ -119,4 +109,38 @@ header {
     border-radius: 4px;
     padding: 6px 10px;
     font-weight: bold;
+}
+
+/* Hero*/
+
+/* Colori 
+ELETTRONICA: #232F3E
+LIBRI: #C45500
+ABBIGLIAMENTO: #146EB4
+CASA: #067D62
+SCRITTE NELLE CARD: #EEEEEE
+STELLINE (sia piene che vuote): #FF9900
+AGGIUNGI AL CARRELLO: #FFD814
+HOVER AGGIUNGI AL CARRELLO: #F7CA00
+FOOTER: #232F3E 
+*/
+
+.hero {
+    background-color: #303F51;
+    color: white;
+    text-align: center;
+    padding: 50px 20px 70px 20px;
+    width: 100%;
+    overflow: hidden; 
+}
+
+.hero h1 {
+    font-size: 2.7em;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.hero h4 {
+    font-size: 18px;
+    color: #white;
 }

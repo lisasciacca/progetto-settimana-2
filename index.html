@@ -1,34 +1,71 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Amazon Homepage — Week Project</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <header>
     <div class="logo">amazon</div>
-        <div class="barra">
-            <input type="text" placeholder="Cerca prodotti, categorie, brand...">
-            <button>Cerca</button>
-        </div>
-        <div class="headerLinks">
-            <a href="javascript:void(0)">Account</a>
-            <a href="javascript:void(0)">Ordini</a>
-            <button class="cart">Carrello (0)</button>
-        </div>
+    <div class="barra">
+      <input type="text" placeholder="Cerca prodotti, categorie, brand...">
+      <button>Cerca</button>
+    </div>
+    <div class="headerLinks">
+      <a href="javascript:void(0)">Account</a>
+      <a href="javascript:void(0)">Ordini</a>
+      <button class="cart">Carrello (0)</button>
+    </div>
   </header>
 
   <main>
 
     <section class="hero">
-      <!-- Titolo grande, sottotitolo -->
+      <h1>Le offerte di oggi</h1>
+      <h4>Sconti fino al 70% su elettronica, libri, casa e molto altro</h4>
     </section>
 
     <section class="categorie">
-      <!-- 4 card categoria -->
+      <h2>Categorie</h2>
+      <div class="categorieGliglia">
+
+        <div class="boxC">
+          <div class="boxImg">Elettronica</div>
+          <div class="boxInfo">
+            <h3>Elettronica</h3>
+            <a href="javascript:void(0)">Scopri di più</a>
+          </div>
+        </div>
+
+        <div class="boxC">
+          <div class="boxImg">Libri</div>
+          <div class="boxInfo">
+            <h3>Libri</h3>
+            <a href="javascript:void(0)">Scopri di più</a>
+          </div>
+        </div>
+
+        <div class="boxC">
+          <div class="boxImg">Abbigliamento</div>
+          <div class="boxInfo">
+            <h3>Abbigliamento</h3>
+            <a href="javascript:void(0)">Scopri di più</a>
+          </div>
+        </div>
+
+        <div class="boxC">
+          <div class="boxImg">Casa</div>
+          <div class="boxInfo">
+            <h3>Casa</h3>
+            <a href="javascript:void(0)">Scopri di più</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="prodotti">
@@ -43,4 +80,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
